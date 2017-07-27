@@ -1,0 +1,13 @@
+{{set . "title" "GenderAssumer"}}
+{{template "header.html" .}}
+
+<h1 style="text-align: center; font-size: 4em;">I think that {{.myName}} is {{.crar}}, was I right?</h1>
+<center>
+<form action="/App/TrainYes">
+    <input type="submit" class="button button-action button-large" value="Yes" />
+</form>
+<br />
+<form action="/App/TrainNo">
+    <input type="submit" class="button button-caution button-large" value="No" /></form>
+</center>
+{{template "footer.html" .}}

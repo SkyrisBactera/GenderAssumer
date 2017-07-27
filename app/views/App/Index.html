@@ -1,0 +1,34 @@
+{{set . "title" "GenderAssumer"}}
+{{template "header.html" .}}
+
+<header class="jumbotron" style="background-color:#A9F16C">
+  <div class="container">
+    <div class="row">
+      <h1>{{.greeting}}</h1>
+      <p></p>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="span6">
+      {{template "flash.html" .}}
+      <div class="container">
+          <section class="content">
+              <span class="input input--minoru">
+                  <form action="/App/Classify" method="GET">                    
+                <input class="input__field input__field--yoko" type="text" name="myName" id="input-16" />
+                <label class="input__label input__label--yoko" for="input-16">
+                  <span class="input__label-content input__label-content--yoko">Name</span>
+                  </label>
+                   <input type="submit" class="button button-action button-small" value="Submit!"/>
+                </form>
+                  </span>
+                  </section>
+    </div>
+    </div>
+  </div>
+</div>
+
+{{template "footer.html" .}}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>{{.title}}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/public/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/public/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/public/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="/public/css/set1.css" />
+    <link rel="stylesheet" href="/public/css/buttons.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.2.1/pretty.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="/public/img/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/public/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/img/favicon-16x16.png">
+    <link rel="manifest" href="/public/img/manifest.json">
+    <link rel="mask-icon" href="/public/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/public/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#a9f16c">
+    <meta name="msapplication-TileImage" content="/public/img/mstile-144x144.png">
+    <meta name="msapplication-config" content="/public/img/browserconfig.xml">
+    <meta name="theme-color" content="#a9f16c">
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+    <script src="/public/js/jquery-2.2.4.min.js"></script>
+    <script src="/public/js/bootstrap-3.3.6.min.js"></script>
+    {{range .moreStyles}}
+      <link rel="stylesheet" type="text/css" href="/public/{{.}}">
+    {{end}}
+    {{range .moreScripts}}
+      <script src="/public/{{.}}" type="text/javascript" charset="utf-8"></script>
+    {{end}}
+  </head>
+  <body>
