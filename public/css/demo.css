@@ -15,12 +15,21 @@
 .clearfix:before, .clearfix:after { content: ''; display: table; }
 .clearfix:after { clear: both; }
 
+html, body {
+  height: 100%;
+}
+
 body {
 	background: #f9f7f6;
 	color: #404d5b;
 	font-weight: 500;
 	font-size: 1.05em;
 	font-family: 'Raleway', Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+.content {
+	flex: 1 0 auto;
 }
 
 a {
